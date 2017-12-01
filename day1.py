@@ -2,6 +2,8 @@
 
 number = input('Enter your number: ')
 
+number = str(number)
+
 # Part 1
 count = 0
 digits = []
@@ -10,7 +12,7 @@ for i in number:
         if i == number[count + 1]:
             digits.append(int(i))
     except:
-        if i == number[-1]:
+        if i == number[0]:
             digits.append(int(i))
     count += 1
 
